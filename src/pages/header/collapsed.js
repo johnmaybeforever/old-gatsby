@@ -10,10 +10,13 @@ const CollapseMenu = (props) => {
             Home
           </a>
           <a onClick={props.handleNavbar} href="/junk">
-            Junk
+            Links
           </a>
           <a onClick={props.handleNavbar} href="/referrals">
-            More
+            Niche stuff
+          </a>
+          <a onClick={props.handleNavbar} href="/reviews">
+            Reviews
           </a>
         </NavLinks>
       </CollapseWrapper>

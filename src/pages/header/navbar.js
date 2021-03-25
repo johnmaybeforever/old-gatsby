@@ -11,8 +11,9 @@ const Navbar = (props) => {
         <FlexContainer>
           <NavLinks>
             <a href="/">Home</a>
-            <a href="/junk">Junk</a>
-            <a href="/referrals">More</a>
+            <a href="/junk">Links</a>
+            <a href="/referrals">Niche stuff</a>
+            <a href="/reviews">Reviews</a>
           </NavLinks>
           <BurgerWrapper>
             <BurgerMenu
