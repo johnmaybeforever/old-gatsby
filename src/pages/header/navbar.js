@@ -40,6 +40,7 @@ const NavBar = styled.nav`
   width: 100%;
   top: 0;
   left: 0;
+  right: 0;
   background: #2d3436;
   z-index: 1;
   font-size: 1.4rem;
@@ -47,7 +48,6 @@ const NavBar = styled.nav`
 `;
 
 const FlexContainer = styled.div`
-  max-width: 120rem;
   display: flex;
   margin: auto;
   padding: 0 2rem;
@@ -82,6 +82,8 @@ const NavLinks = styled.ul`
 `;
 
 const BurgerWrapper = styled.div`
+  position: fixed;
+  right: 0;
   @media (min-width: 600px) {
     display: none;
   }

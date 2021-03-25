@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { graphql } from "gatsby";
 import styled from "styled-components";
 
-import Navbar from "../pages/header/navbar";
+import SiteTemplate from "./siteTemplate";
 const PostContainer = styled.div`
-  margin: 2rem auto;
-  max-width: 600px;
+  margin: 0 auto;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,14 +17,9 @@ export default function Template({
 }) {
   const { markdownRemark } = data; // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark;
-  const [navBarOpen, setNavBar] = useState(false);
 
-  const handleNavbar = () => {
-    setNavBar(!navBarOpen);
-  };
   return (
-    <>
-      <Navbar navbarState={navBarOpen} handleNavbar={handleNavbar}></Navbar>
+    <SiteTemplate>
       <PostContainer>
         <div className="blog-post">
           <h1>{frontmatter.title}</h1>
@@ -34,8 +29,8 @@ export default function Template({
           />
         </div>
       </PostContainer>
-      <footer>last updated: {frontmatter.date}</footer>
-    </>
+      <footer>All opinions are my own. Last updated: {frontmatter.date}</footer>
+    </SiteTemplate>
   );
 }
 

@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
-import Navbar from "./header/navbar";
+import SiteTemplate from "../templates/siteTemplate";
 const Container = styled.div`
-  margin: 2rem auto;
+  margin: 0 auto;
   max-width: 600px;
   display: flex;
   flex-direction: column;
@@ -51,14 +51,8 @@ const links = [
 
 // markup
 const IndexPage = () => {
-  const [navBarOpen, setNavBar] = useState(false);
-
-  const handleNavbar = () => {
-    setNavBar(!navBarOpen);
-  };
   return (
-    <>
-      <Navbar navbarState={navBarOpen} handleNavbar={handleNavbar}></Navbar>
+    <SiteTemplate>
       <Container style={{ "font-family": "Sans-serif" }}>
         <title>Home Page</title>
         <h1 style={{ "text-align": "center" }}>
@@ -92,12 +86,11 @@ const IndexPage = () => {
           Tired of top-ten websites where an "expert" with no hands-on
           experience gives their regurgitation of reading amazon reviews? What
           this website lacks in quantity and style, makes up for with real world
-          experience and honesty. No affliate links or kickbacks. All opinions
-          are my own.
+          experience and honesty. No affliate links or kickbacks.
         </p>
       </Container>
-      <footer>last updated: March 2021</footer>
-    </>
+      <footer>All opinions are my own. Last updated:</footer>
+    </SiteTemplate>
   );
 };
 

@@ -1,9 +1,10 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
+import SiteTemplate from "../templates/siteTemplate";
 
 export default function Reviews({ data }) {
   return (
-    <div>
+    <SiteTemplate>
       {data.allMarkdownRemark.edges
         .filter(
           ({ node }) =>
@@ -23,7 +24,7 @@ export default function Reviews({ data }) {
             </Link>
           </div>
         ))}
-    </div>
+    </SiteTemplate>
   );
 }
 
