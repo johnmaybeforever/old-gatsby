@@ -1,26 +1,26 @@
 ---
-slug: "/too-much-money"
+slug: "/junk"
 date: "2021-03-21"
 title: "got too much money?"
 ---
-# List of review websites to visit before purchasing a product
+
+## List of review websites to visit before purchasing a product
+
 https://www.techgearlab.com no user comments
 
-https://www.wirecutter.com Better the most review sites. Even though their CEO Brian Lam has been known in 2014 to choose top picks based on which company provides kickbacks. https://www.xdesk.com/wirecutter-standing-desk-review-pay-to-play-model The Disqus user comments are often helpful (although sometimes buggy to load). 
+https://www.wirecutter.com Better the most review sites. Even though their CEO Brian Lam has been known in 2014 to choose top picks based on which company provides kickbacks. https://www.xdesk.com/wirecutter-standing-desk-review-pay-to-play-model The Disqus user comments are often helpful (although sometimes buggy to load).
 
 https://bestreviews.com/ no user comments
 
 https://www.reviewed.com/ no user comments
 
-https://slickdeals.net/ for limited time deals. The user comments are painful to traverse but often helpful. 
+https://slickdeals.net/ for limited time deals. The user comments are painful to traverse but often helpful.
 
-## niche review websites
+### Niche review websites
 
 https://www.tweaktown.com limited to computer related products
 
 http://www.digitalreviews.net/ limited to electronics (phones, computers, gps, etc.)
-
-doctorofcredit.com credit card and bank bonuses (aka churning)
 
 ## Other sites:
 
@@ -35,7 +35,8 @@ https://www.cooksillustrated.com/ paywall
 
 https://www.gadgetreview.com/ bad ui. no user comments
 
-https://www.bbcgoodfood.com/ does not show competition. 
-https://www.thespruceeats.com/ does not show competition. 
+https://www.bbcgoodfood.com/ does not show competition.
+
+https://www.thespruceeats.com/ does not show competition.
 
 https://www.finecooking.com/

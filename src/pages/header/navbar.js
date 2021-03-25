@@ -1,39 +1,38 @@
-import React from 'react'
+import React from "react";
 import styled from "styled-components";
 
 import BurgerMenu from "./burger";
 import CollapseMenu from "./collapsed";
 
 const Navbar = (props) => {
-
   return (
     <>
-      <NavBar >
+      <NavBar>
         <FlexContainer>
           <NavLinks>
             <a href="/">Home</a>
-            <a href="/reviews">Review Sites</a>
-
             <a href="/junk">Junk</a>
             <a href="/referrals">More</a>
           </NavLinks>
           <BurgerWrapper>
             <BurgerMenu
-              navbarState={props.navbarState} 
+              navbarState={props.navbarState}
               handleNavbar={props.handleNavbar}
             />
           </BurgerWrapper>
         </FlexContainer>
       </NavBar>
-      <CollapseMenu 
-        navbarState={props.navbarState} 
-        handleNavbar={props.handleNavbar}
-      />
-   </>
-  )
-}
+      <CollapseWrapper>
+        <CollapseMenu
+          navbarState={props.navbarState}
+          handleNavbar={props.handleNavbar}
+        />
+      </CollapseWrapper>
+    </>
+  );
+};
 
-export default Navbar
+export default Navbar;
 
 const NavBar = styled.nav`
   position: fixed;
@@ -51,21 +50,22 @@ const FlexContainer = styled.div`
   display: flex;
   margin: auto;
   padding: 0 2rem;
-  justify-content: space-between;
+  justify-content: center;
   height: 2rem;
+  @media (max-width: 599px) {
+    height: 0;
+  }
 `;
 
 const NavLinks = styled.ul`
   justify-self: end;
-  list-style-type: none;
   margin: auto 0;
-  
+
   & a {
     color: #dfe6e9;
     font-weight: 600;
     border-bottom: 1px solid transparent;
     margin: 0 1.5rem;
-    transition: all 300ms linear 0s;
     text-decoration: none;
     cursor: pointer;
 
@@ -74,16 +74,20 @@ const NavLinks = styled.ul`
       border-bottom: 1px solid #fdcb6e;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 599px) {
       display: none;
     }
   }
 `;
- 
-const BurgerWrapper = styled.div`
-  margin: auto 0;
 
-  @media (min-width: 769px) {
+const BurgerWrapper = styled.div`
+  @media (min-width: 600px) {
+    display: none;
+  }
+`;
+
+const CollapseWrapper = styled.div`
+  @media (min-width: 600px) {
     display: none;
   }
 `;

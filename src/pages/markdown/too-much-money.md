@@ -3,6 +3,7 @@ slug: "/too-much-money"
 date: "2021-03-21"
 title: "got too much money?"
 ---
+
 # useful stuff for those with too much money
 
 if you only have a little too much money, see <>.
