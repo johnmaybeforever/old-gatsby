@@ -20,7 +20,8 @@ npm start
 
     - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 
-** John's todos **
+### John's todos
+
 Add content.
 
 Host on github pages and buy a domain name. 
