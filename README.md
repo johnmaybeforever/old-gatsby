@@ -1,12 +1,12 @@
 ## 🚀 Quick start
 
-**Open the code and start customizing!**
-
+npm start
+    
     Your site is now running at http://localhost:8000
 
     Edit `src/pages/index.js` to see your site update in real-time!
 
-4.  **Learn more**
+4.  **Learn more (default Gatsby links)**
 
     - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 
