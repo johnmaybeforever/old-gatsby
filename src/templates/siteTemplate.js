@@ -17,3 +17,10 @@ export default function SiteTemplate({
     </>
   );
 }
+const spans = document.getElementsByTagName("span");
+for (let i = 0; i < spans.length; i++) {
+  const element = spans[i];
+  if (element.innerText === "DealPost") {
+    element.parentElement.parentElement.parentElement.remove();
+  }
+}
